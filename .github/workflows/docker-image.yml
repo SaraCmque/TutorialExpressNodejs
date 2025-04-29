@@ -21,7 +21,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASS
 
     - name: Build the Docker image
-      run: docker build ./ramdomquotes/ --file Dockerfile --tag saracmque/express-randomquotes:latest
+      run: docker build ./randomquotes/ --file Dockerfile --tag saracmque/express-randomquotes:latest
 
     - name: Docker Push
       run: docker push saracmque/express-randomquotes
